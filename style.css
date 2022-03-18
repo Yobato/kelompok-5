@@ -61,11 +61,11 @@ footer button {
 
 .btn-custom-save {
   padding: 8px 12px;
-  background: #0d28a6;
+  background: #ffffff;
   border: 1px solid #0d28a6;
   box-sizing: border-box;
   border-radius: 3px;
-  color: #ffffff;
+  color: #0d28a6;
   font-size: 14px;
   font-weight: 700;
   justify-content: end;
@@ -77,22 +77,28 @@ footer button {
   transition: 150ms linear;
 }
 
-::file-selector-button { 
-  display: none; 
+.btn-custom-save:hover {
+  background: #0d28a6;
+  color: #ffffff;
+  transition: 150ms linear;
 }
 
-.input-group-text{
+::file-selector-button {
+  display: none;
+}
+
+.input-group-text {
   background-color: #ffffff !important;
   border-left: none !important;
   cursor: pointer;
 }
 
-#formFile{
+#formFile {
   max-width: 518px;
   border-right: none !important;
   margin-bottom: 0;
 }
 
-#fileHelp{
+#fileHelp {
   margin: 0;
 }
