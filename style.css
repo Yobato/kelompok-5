@@ -26,18 +26,8 @@ input {
 }
 
 .footer {
-  position: absolute;
-  bottom: 40px;
-}
-
-label {
-  max-width: 60%;
-}
-
-label img {
   position: relative;
-  left: 510px;
-  top: -2px;
+  bottom: -150px;
 }
 
 .form-body p {
@@ -48,9 +38,9 @@ label img {
 }
 
 .form-body img {
-  position: absolute;
-  top: 32%;
-  right: 37.8%;
+  position: relative;
+  top: -34px;
+  right: -525px;
 }
 
 footer button {
