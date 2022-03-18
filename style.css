@@ -7,6 +7,10 @@ body {
   display: none;
 }
 
+::file-selector-button {
+  display: none;
+}
+
 input[type='file'] {
   opacity: 70%;
 }
@@ -30,17 +34,15 @@ input {
   bottom: -150px;
 }
 
-.form-body p {
-  position: absolute;
-  top: 308px;
-  left: 668px;
-  opacity: 70%;
-}
-
 .form-body img {
   position: relative;
   top: -34px;
   right: -525px;
+}
+
+.form-body small {
+  position: relative;
+  top: -32px;
 }
 
 footer button {
