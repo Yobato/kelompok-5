@@ -18,7 +18,7 @@ input[type='file'] {
 }
 
 input {
-  max-width: 60%;
+  max-width: 560px;
 }
 
 .row {
