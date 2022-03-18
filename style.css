@@ -7,6 +7,20 @@ body {
   display: none;
 }
 
+.sub-tree i {
+  position: relative;
+  top: 5px;
+}
+
+a:hover {
+  color: blue !important;
+}
+
+.sub-tree a {
+  color: black;
+  text-decoration: inherit;
+}
+
 input[type='file'] {
   opacity: 70%;
 }
@@ -93,7 +107,7 @@ footer button {
   cursor: pointer;
 }
 
-#formFile {
+#file-input {
   max-width: 518px;
   border-right: none !important;
   margin-bottom: 0;

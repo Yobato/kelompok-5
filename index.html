@@ -11,14 +11,25 @@
 
     <title>Add New Car</title>
   </head>
-
   <body>
     <section id="page-5">
       <div class="container pt-4">
         <div class="row">
           <div class="col-12">
-            <span><b>Cars > List Car ></b> Add New Car</span>
-            <h1 class="pt-4">Add New Car</h1>
+            <div class="sub-tree d-flex mt-3 mb-3">
+              <a href="#">
+                <p class="fw-bold">Cars</p>
+              </a>
+              <i class="fa fa-solid fa-chevron-right mx-2"></i>
+              <a href="#">
+                <p class="fw-bold">List Car</p>
+              </a>
+              <i class="fa fa-solid fa-chevron-right mx-2"></i>
+              <a href="#">
+                <p>Add New Car</p>
+              </a>
+            </div>
+            <h2>Add New Car</h2>
             <div class="form-body">
               <form>
                 <div class="row">
@@ -50,7 +61,8 @@
                   </div>
                   <div class="col-lg-9">
                     <div class="input-group">
-                      <input class="form-control" type="file" id="formFile" />
+                      <input class="form-control" type="file" id="formFile" style="display: none" onchange="getNameFile(this.value)" />
+                      <label for="formFile" id="file-input" class="form-control icon text-secondary">No file selected</label>
                       <span class="input-group-text"><img src="fi_upload.png" /></span>
                     </div>
                     <small id="fileHelp" class="form-text text-muted" style="margin-left: 1px">File size max. 2 MB</small>
@@ -106,7 +118,14 @@
         </footer>
       </div>
     </section>
-    <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/7441451cf7.js" crossorigin="anonymous"></script>
+    <script>
+      function getNameFile(nameFile) {
+        const date = new Date();
+        let result = `IMG/${date.getMonth()}/${date.getFullYear()}/001`;
+        document.getElementById('file-input').innerHTML = result;
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
